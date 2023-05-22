@@ -7,7 +7,7 @@ For example:
 
 [ -1, -1, 5, 2, -7] ==> -1
 
-[] ==> null*/
+[] ==> null8*/
 
 const uniqueSum = (lst) => [...new Set(lst)].reduce((a, cv) => a + cv, null);
 
@@ -21,4 +21,21 @@ describe("Tests", () => {
   Test.assertEquals(uniqueSum([]), null)
     });
   });
+   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
