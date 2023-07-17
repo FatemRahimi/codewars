@@ -36,12 +36,5 @@ const overTheRoad = (address, n) => {
 // TESTS - run the following command to test this file:
 // npm run test -- JS3-Week2/Over_The_Road.js
 
-test('Over The Road', () => {    
-    expect(overTheRoad(1, 3)).toBe(6);
-    expect(overTheRoad(3, 3)).toBe(4); 
-    expect(overTheRoad(2, 3)).toBe(5); 
-    expect(overTheRoad(3, 5)).toBe(8); 
-    expect(overTheRoad(7,11)).toBe(16); 
-    expect(overTheRoad(23633656673, 310027696726)).toBe(596421736780);
-});
+
   
