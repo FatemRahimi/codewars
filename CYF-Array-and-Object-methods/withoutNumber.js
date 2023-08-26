@@ -8,3 +8,9 @@ Good luck :)
 
 const unusualFive = () => 'abcde'.length;
 
+// TESTS - run the following command to test this file:
+// npm run test -- CYF-Fundamentals/5_without_numbers.js
+
+test('5 without numbers !!', () => {
+  expect(unusualFive()).toBe(5);
+});
