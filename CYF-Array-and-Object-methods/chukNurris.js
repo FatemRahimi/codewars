@@ -9,4 +9,9 @@ Go show some truth who's boss!
 
 const ifChuckSaysSo = () => 0 === 1;
 
+// TESTS - run the following command to test this file:
+// npm run test -- CYF-Fundamentals/Chuck_Norris_VII_True_or_False_Beginner.js
 
+test('Chuck Norris VII - True or False? (Beginner):', () => {
+  expect(ifChuckSaysSo()).toBe(false);
+});
