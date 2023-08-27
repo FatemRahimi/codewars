@@ -76,3 +76,14 @@ const firstName = {
   function aliasGen(fName, lName) {
     return /[A-Za-z]/g.test(fName[0]) && /[A-Za-z]/g.test(lName[0]) ? `${firstName[fName[0]]} ${surname[lName[0]]}` : 'Your name must start with a letter from A - Z.';
   }
+
+  // TESTS - run the following command to test this file:
+// npm run test -- JS2-Week1/Crash_Override.js
+
+test('Crash Override', () => {
+    expect(aliasGen('Mike', 'Millington')).toBe('Malware Mike');
+    expect(aliasGen('Fahima', 'Tash')).toBe('Function T-Rex');
+    expect(aliasGen('Daisy', 'Petrovic')).toBe('Data Payload');
+    expect(aliasGen('7393424', 'Anumbha')).toBe('Your name must start with a letter from A - Z.');
+    expect(aliasGen('Anuddanumbha', '23200')).toBe('Your name must start with a letter from A - Z.');
+  });
