@@ -13,4 +13,10 @@ function generateShape(integer) {
     return `${'+'.repeat(integer)}\n`.repeat(integer).slice(0, -1);
   }
   
+  // TESTS - run the following command to test this file:
+  // npm run test -- JS2-Week1/Build_a_square.js
+  
+  test('Build a square', () => {
+    expect(generateShape(8)).toBe('++++++++\n++++++++\n++++++++\n++++++++\n++++++++\n++++++++\n++++++++\n++++++++');
+  });
 
