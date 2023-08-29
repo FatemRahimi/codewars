@@ -14,15 +14,28 @@ If you've got a span function lying around, this is a one-liner! Also, if you li
 */
 
 const takeWhile = (arr, pred) => {
-    const answer = [];
-    for (const el of arr) {
-      if (!pred(el)) break;
-      answer.push(el);
-    }
-    return answer;
-  };
-  
-  // TESTS - run the following command to test this file:
-  // npm run test -- CYF-Array-and-Object-methods/The_takeWhile_Function.js
-  
- 
+  const answer = [];
+  for (const el of arr) {
+    if (!pred(el)) break;
+    answer.push(el);
+  }
+  return answer;
+};
+
+// TESTS - run the following command to test this file:
+// npm run test -- CYF-Array-and-Object-methods/The_takeWhile_Function.js
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+const isEvenTests = [
+  [[2, 6, 4, 10, 1, 5, 4, 3], [2, 6, 4, 10]],
+  [[998, 996, 12, -1000, 200, 0, 1, 1, 1], [998, 996, 12, -1000, 200, 0]],
+  [[2, 4, 10, 100, 64, 78, 92], [2, 4, 10, 100, 64, 78, 92]]];
+
+test('The takeWhile Function', () => {
+  expect(takeWhile(isEvenTests[0][0], isEven)).toStrictEqual(isEvenTests[0][1]);
+  expect(takeWhile(isEvenTests[1][0], isEven)).toStrictEqual(isEvenTests[1][1]);
+  expect(takeWhile(isEvenTests[2][0], isEven)).toStrictEqual(isEvenTests[2][1]);
+});
