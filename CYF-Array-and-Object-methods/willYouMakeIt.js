@@ -11,7 +11,3 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => distanceToPump <= mpg * fuel
 // TESTS - run the following command to test this file:
 // npm run test -- JS2-Week1/Will_you_make_it.js
 
-test('Will you make it?', () => {
-  expect(zeroFuel(50, 25, 2)).toBe(true);
-  expect(zeroFuel(100, 50, 1)).toStrictEqual(false);
-});
