@@ -19,4 +19,11 @@ const wordscore = (word) => {
     return word.length === 7 ? points * word.length + 50 : points * word.length;
   };
   
- 
+  // TESTS - run the following command to test this file:
+  // npm run test -- JS2-Week3/Scrabblemania.js
+  
+  test('Scrabblemania', () => {
+    expect(wordscore('great')).toBe(30);
+    expect(wordscore('deceive')).toBe(141);
+    expect(wordscore('melon')).toBe(35);
+  });
