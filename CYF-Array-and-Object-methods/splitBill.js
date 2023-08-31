@@ -28,4 +28,15 @@ const splitTheBill = (x) => {
     Object.keys(x).map((k) => x[k] = parseFloat((x[k] - cost).toFixed(2)));
     return x;
   };
- 
+  
+  // TESTS - run the following command to test this file:
+  // npm run test -- JS2-Week3/Split_The_Bill.js
+  
+  test('Split The Bill', () => {
+    expect(splitTheBill({
+      A: 40, B: 25, C: 10, D: 153, E: 58,
+    })).toStrictEqual({
+      A: -17.2, B: -32.2, C: -47.2, D: 95.8, E: 0.8,
+    });
+    expect(splitTheBill({ A: 40, B: 25, X: 10 })).toStrictEqual({ A: 15, B: 0, X: -15 });
+  });
