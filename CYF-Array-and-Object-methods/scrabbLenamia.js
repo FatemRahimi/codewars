@@ -26,4 +26,4 @@ const wordscore = (word) => {
     expect(wordscore('great')).toBe(30);
     expect(wordscore('deceive')).toBe(141);
     expect(wordscore('melon')).toBe(35);
-  });
+  });§
