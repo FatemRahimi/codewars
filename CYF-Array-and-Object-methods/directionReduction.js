@@ -55,5 +55,8 @@ const opps = {
   }
   
   // TESTS - run the following command to test this file:
-  // npm run test -- CYF-Catch-Up-Kata/Directions_Reduction.js
+  // npm run test -- CYF-Catch-Up-Kata/Directions_Reduction.jsa = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+Test.assert_equals(dirReduc(a), ["WEST"])
+u=["NORTH", "WEST", "SOUTH", "EAST"]
+Test.assert_equals(dirReduc(u), ["NORTH", "WEST", "SOUTH", "EAST"])
   
